@@ -281,7 +281,7 @@ export default {
   // font-family: "elvetica neue", tahoma, "hiragino sans gb";
   padding: 20px;
   background: #fff;
-  max-width: 960px;
+  max-width: 1440px;
   margin: 0 auto;
   ul,
   p {
