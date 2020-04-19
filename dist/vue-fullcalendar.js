@@ -794,9 +794,6 @@ return /******/ (function(modules) { // webpackBootstrap
 	//
 	//
 	//
-	//
-	//
-	//
 
 /***/ }),
 /* 8 */
@@ -18981,7 +18978,10 @@ return /******/ (function(modules) { // webpackBootstrap
 	        expression: "event.isShow"
 	      }],
 	      staticClass: "body-item"
-	    }, [_vm._t("fc-event"), _vm._v(" "), _c('span', {
+	    }, [_vm._t("fc-event", null, {
+	      "scope": "popup",
+	      "event": _vm.popup.event
+	    }), _vm._v(" "), _c('span', {
 	      on: {
 	        "click": function($event) {
 	          return _vm.eventClick(event, $event)

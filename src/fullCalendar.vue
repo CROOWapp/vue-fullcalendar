@@ -89,10 +89,7 @@
                 v-show="event.isShow"
                 class="body-item"
               >
-                <slot
-                  @click="$emit('toggleToDoCompletion')"
-                  name="fc-event"
-                ></slot>
+                <slot name="fc-event" scope="popup" :event="popup.event"></slot>
                 <span @click="eventClick(event, $event)">{{
                   event.title
                 }}</span>
