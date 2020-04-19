@@ -91,9 +91,6 @@
                 :class="cssClasses(event)"
               >
                 <slot name="fc-event" :event="event"></slot>
-                <span @click="eventClick(event, $event)">{{
-                  event.title
-                }}</span>
               </li>
             </ul>
           </div>
