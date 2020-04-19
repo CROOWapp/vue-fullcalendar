@@ -18979,8 +18979,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	      }],
 	      staticClass: "body-item"
 	    }, [_vm._t("fc-event", null, {
-	      "scope": "popup",
-	      "event": _vm.popup.event
+	      "event": event
 	    }), _vm._v(" "), _c('span', {
 	      on: {
 	        "click": function($event) {

@@ -89,7 +89,7 @@
                 v-show="event.isShow"
                 class="body-item"
               >
-                <slot name="fc-event" scope="popup" :event="popup.event"></slot>
+                <slot name="fc-event" :event="event"></slot>
                 <span @click="eventClick(event, $event)">{{
                   event.title
                 }}</span>
