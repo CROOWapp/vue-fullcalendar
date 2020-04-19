@@ -88,6 +88,7 @@
                 v-for="event in selectDay.events"
                 v-show="event.isShow"
                 class="body-item"
+                :class="cssClasses(event)"
               >
                 <slot name="fc-event" :event="event"></slot>
                 <span @click="eventClick(event, $event)">{{
@@ -154,6 +155,15 @@ export default {
     },
   },
   methods: {
+    cssClasses(event) {
+      let cssClasses = event.cssClass
+
+      if (!Array.isArray(cssClasses)) cssClasses = [cssClasses]
+      else cssClasses = Array.from(cssClasses)
+
+      return cssClasses.join(' ')
+    },
+
     emitChangeMonth(firstDayOfMonth) {
       this.currentMonth = firstDayOfMonth
 
