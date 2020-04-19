@@ -53,7 +53,6 @@
                   :firstDay="firstDay"
                   v-for="event in day.events"
                   v-show="event.cellIndex <= eventLimit"
-                  @click="eventClick"
                 >
                   <template scope="p">
                     <slot name="fc-event-card" :event="p.event"></slot>
@@ -107,8 +106,7 @@
     </div>
   </div>
 </template>
-<script type="text/babel">
-// import langSets from './dataMap/langSets'
+<script>
 import dateFunc from './components/dateFunc'
 import moment from 'moment'
 import EventCard from './components/eventCard.vue'
@@ -350,7 +348,6 @@ export default {
           }
           .event-box {
             .event-item {
-              cursor: pointer;
               font-size: 12px;
               background-color: #c7e6fd;
               margin-bottom: 2px;
